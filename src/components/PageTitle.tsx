@@ -11,7 +11,7 @@ const PageTitle = ({
   return (
     <div className="page-title-head d-flex align-items-center gap-2">
       <div className="flex-grow-1">
-        <h4 className="fs-16 text-uppercase fw-bold mb-0">{title}</h4>
+        <h4 className="fs-10 text-capitalize fw-bold mb-0">{title}</h4>
       </div>
       <div className="text-end">
         <ol className="breadcrumb m-0 py-0 fs-13">

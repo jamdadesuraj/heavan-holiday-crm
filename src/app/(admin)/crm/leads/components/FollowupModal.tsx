@@ -44,8 +44,29 @@ const FollowupModal: React.FC = () => {
         size="lg"
         centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title>FollowUp History</Modal.Title>
+        <Modal.Header
+          style={{
+            background: "#274c6b",
+            color: "#fff",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Modal.Title>Follow Up History</Modal.Title>
+
+          <button
+            onClick={() => setShowHistory(false)}
+            style={{
+              background: "transparent",
+              border: "none",
+              color: "#fff",
+              fontSize: "18px",
+              cursor: "pointer",
+            }}
+          >
+            ✕
+          </button>
         </Modal.Header>
 
         <Modal.Body>
@@ -90,8 +111,29 @@ const FollowupModal: React.FC = () => {
 
       {/* ================= ADD MODAL ================= */}
       <Modal show={showAdd} onHide={() => setShowAdd(false)} size="lg" centered>
-        <Modal.Header closeButton>
+        <Modal.Header
+          style={{
+            background: "#274c6b",
+            color: "#fff",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Modal.Title>Add To Do / Follow Up</Modal.Title>
+
+          <button
+            onClick={() => setShowAdd(false)}
+            style={{
+              background: "transparent",
+              border: "none",
+              color: "#fff",
+              fontSize: "18px",
+              cursor: "pointer",
+            }}
+          >
+            ✕
+          </button>
         </Modal.Header>
 
         <Modal.Body>
@@ -280,27 +322,30 @@ const FollowupModal: React.FC = () => {
               <Form.Label className="text-primary" style={{ fontSize: "10px" }}>
                 Time
               </Form.Label>
-              <Form.Control type="time" />
+              <Form.Control type="time" style={{ fontSize: "10px" }} />
             </Form.Group>
 
             <Form.Group className="mb-2">
               <Form.Label className="text-primary" style={{ fontSize: "10px" }}>
                 Assigned To
               </Form.Label>
-              <Form.Control type="text" />
+              <Form.Control type="text" style={{ fontSize: "10px" }} />
             </Form.Group>
 
             <Form.Group className="mb-2">
               <Form.Label className="text-primary" style={{ fontSize: "10px" }}>
                 Customer
               </Form.Label>
-              <Form.Control type="text" />
+              <Form.Control type="text" style={{ fontSize: "10px" }} />
             </Form.Group>
             <Form.Group className="mb-2">
               <Form.Label className="text-primary" style={{ fontSize: "10px" }}>
                 Select
               </Form.Label>
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                aria-label="Default select example"
+                style={{ fontSize: "10px" }}
+              >
                 <option>select Lead</option>
                 <option value="1">B2B</option>
                 <option value="2">B2C</option>
@@ -311,10 +356,18 @@ const FollowupModal: React.FC = () => {
               <Form.Label className="text-primary" style={{ fontSize: "10px" }}>
                 Details
               </Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control
+                as="textarea"
+                rows={3}
+                style={{ fontSize: "10px" }}
+              />
             </Form.Group>
 
-            <Form.Check type="checkbox" label="Completed" />
+            <Form.Check
+              type="checkbox"
+              label="Completed"
+              style={{ fontSize: "10px" }}
+            />
           </Form>
         </Modal.Body>
 

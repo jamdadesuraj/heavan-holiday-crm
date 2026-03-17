@@ -14,6 +14,7 @@ export type StatType = {
   variant: string;
   href: string;
   btnTitle: string;
+  onClick?: () => void;
 };
 export type VisitorTrafficsType = {
   country: string;

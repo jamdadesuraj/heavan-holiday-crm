@@ -59,9 +59,25 @@ const B2CLeadModal: React.FC = () => {
 
       {/* MODAL */}
       <Modal show={show} onHide={handleClose} centered>
-        {/* HEADER */}
-        <Modal.Header closeButton style={{ background: "#2c4e6c" }}>
-          <Modal.Title className="text-white">Add Lead</Modal.Title>
+        {/* Header */}
+        <Modal.Header
+          style={{ background: "#274c6b", color: "#fff" }}
+          className="d-flex justify-content-between"
+        >
+          <Modal.Title>Add Lead</Modal.Title>
+
+          <button
+            onClick={handleClose}
+            style={{
+              background: "transparent",
+              border: "none",
+              color: "#fff",
+              fontSize: "18px",
+              cursor: "pointer",
+            }}
+          >
+            ✕
+          </button>
         </Modal.Header>
 
         {/* BODY */}

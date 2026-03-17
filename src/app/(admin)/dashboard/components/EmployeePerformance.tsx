@@ -7,7 +7,7 @@ const EmployeePerformance = () => {
     <Card className="shadow-sm border-0">
       <CardBody>
         {/* Header */}
-        <div className="d-flex justify-content-between align-items-center mb-3">
+        <div className="d-flex justify-content-between align-items-center mb-2">
           <h6 className="fw-semibold d-flex align-items-center gap-2">
             <IconifyIcon
               icon="solar:chart-square-bold-duotone"
@@ -16,7 +16,7 @@ const EmployeePerformance = () => {
             Employee Performance
           </h6>
 
-          <Form.Select size="sm" style={{ width: "110px" }}>
+          <Form.Select size="sm" style={{ width: "110px", fontSize: "10px" }}>
             <option>Today</option>
             <option>This Week</option>
             <option>This Month</option>
@@ -24,12 +24,13 @@ const EmployeePerformance = () => {
         </div>
 
         {/* Employee Select */}
-        <div className="d-flex align-items-center gap-2 mb-3">
+        <div className="d-flex align-items-center gap-2 mb-2">
           <Form.Control
             type="text"
             value="RAJENDRA BUGADE"
             readOnly
             className="bg-light"
+            style={{ fontSize: "10px", fontWeight: "bold" }}
           />
           <IconifyIcon
             icon="solar:refresh-bold-duotone"
@@ -39,55 +40,74 @@ const EmployeePerformance = () => {
 
         {/* Stats */}
         <div className="d-flex justify-content-between mb-2">
-          <span>Total Sales</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Total Sales
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-2">
-          <span>Queries In Process</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Queries In Process
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-2">
-          <span>Proposal Sent</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Proposal Sent
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-2 text-danger">
-          <span>Proposal Pending</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            {" "}
+            Proposal Pending
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-2 text-danger">
-          <span>Queries Lost</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Queries Lost
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-2 text-primary">
-          <span>Verbal Won</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Verbal Won
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-3 text-success">
-          <span>Won</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>Won</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <hr style={{ borderColor: "#e6d9ff", borderWidth: "3px" }} />
 
         <div className="d-flex justify-content-between mb-2">
-          <span>Leads In Process</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Leads In Process
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
 
         <div className="d-flex justify-content-between mb-2 text-danger">
-          <span>Leads Lost</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Leads Lost
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}> 0</span>
         </div>
 
         <div className="d-flex justify-content-between">
-          <span>Leads Converted</span>
-          <span>0</span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>
+            Leads Converted
+          </span>
+          <span style={{ fontSize: "12px", fontWeight: "600" }}>0</span>
         </div>
       </CardBody>
     </Card>

@@ -33,8 +33,29 @@ TRVCRM`;
       </Button>
 
       <Modal show={show} onHide={handleClose} centered size="lg">
-        <Modal.Header closeButton>
+        <Modal.Header
+          style={{
+            background: "#274c6b",
+            color: "#fff",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Modal.Title>Choose Message</Modal.Title>
+
+          <button
+            onClick={handleClose}
+            style={{
+              background: "transparent",
+              border: "none",
+              color: "#fff",
+              fontSize: "18px",
+              cursor: "pointer",
+            }}
+          >
+            ✕
+          </button>
         </Modal.Header>
 
         <Modal.Body>
@@ -134,13 +155,32 @@ TRVCRM`;
           {activeTab === "custom" && (
             <>
               <Form.Group className="mb-3">
-                <Form.Label>Subject</Form.Label>
-                <Form.Control type="text" placeholder="Subject" />
+                <Form.Label
+                  style={{ fontSize: "10px" }}
+                  className="text-primary"
+                >
+                  Subject
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Subject"
+                  style={{ fontSize: "10px" }}
+                />
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Message" />
+                <Form.Label
+                  style={{ fontSize: "10px" }}
+                  className="text-primary"
+                >
+                  Message
+                </Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="Message"
+                  style={{ fontSize: "10px" }}
+                />
               </Form.Group>
 
               <div className="text-end">

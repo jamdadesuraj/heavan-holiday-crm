@@ -9,8 +9,10 @@ import SendMessageModal from "./SendMessageModal";
 import FollowupModal from "./FollowupModal";
 import B2CLeadModal from "./B2CLeadModal";
 import B2BLeadModal from "./B2BLeadModal";
+import { useRouter } from "next/navigation";
 
 const Leads = () => {
+  const router = useRouter();
   const [isEditing, setIsEditing] = useState<boolean>(false);
   const [phone, setPhone] = useState<string>("+91 8421135320");
 
@@ -63,6 +65,7 @@ const Leads = () => {
                 variant="outline-danger"
                 size="sm"
                 style={{ fontSize: "10px", fontWeight: "bold" }}
+                onClick={() => router.push("/crm/leads/lead-bulk-upload")}
               >
                 <Icon icon="mdi:upload" className="me-1" />
                 B2C
@@ -72,6 +75,7 @@ const Leads = () => {
                 variant="outline-danger"
                 size="sm"
                 style={{ fontSize: "10px", fontWeight: "bold" }}
+                onClick={() => router.push("/crm/leads/lead-b2b-bulk-upload")}
               >
                 <Icon icon="mdi:upload" className="me-1" />
                 B2B
