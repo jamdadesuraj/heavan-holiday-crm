@@ -38,13 +38,13 @@ export const MENU_ITEMS: MenuItemType[] = [
       },
       {
         key: "crm-b2c-customers",
-        label: "B2C Customer(s)",
+        label: "B2C Customers",
         url: "/crm/b2c-customers",
         parentKey: "crm",
       },
       {
         key: "crm-b2b-customers",
-        label: "B2B Customer(s)",
+        label: "B2B Customers",
         url: "/crm/b2b-customers",
         parentKey: "crm",
       },

@@ -141,12 +141,12 @@ const MySupplier = () => {
                   <div className="d-flex flex-column gap-1">
                     <span className="action-btn view">
                       <Button
-                        variant="success"
+                        variant="info"
                         size="sm"
                         style={{ fontSize: "8px" }}
-                        title="View"
+                        title="Edit"
                       >
-                        <Icon icon="mdi:eye-outline" />
+                        <Icon icon="mdi:pencil-outline" />
                       </Button>
                     </span>
                     <span>
@@ -154,9 +154,9 @@ const MySupplier = () => {
                         variant="danger"
                         size="sm"
                         style={{ fontSize: "8px" }}
-                        title="Deactivate"
+                        title="Delete"
                       >
-                        <Icon icon="mdi:close" />
+                        <Icon icon="mdi:trash-can-outline" />
                       </Button>
                     </span>
                   </div>

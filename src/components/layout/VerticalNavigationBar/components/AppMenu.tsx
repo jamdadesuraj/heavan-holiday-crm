@@ -58,6 +58,7 @@ const MenuItemWithChildren = ({
         aria-expanded={open}
         role="button"
         className={clsx(linkClassName)}
+        style={{ fontSize: "12px" }}
       >
         {item.icon && (
           <span className="menu-icon">
@@ -138,10 +139,21 @@ const MenuItemWithChildren = ({
   );
 };
 
-const MenuItem = ({ item, className, linkClassName, level }: SubMenus) => {
+const MenuItem = ({
+  item,
+  className,
+  linkClassName,
+  level,
+  style,
+}: SubMenus) => {
   return (
     <li className={className}>
-      <MenuItemLink item={item} level={level + 1} className={linkClassName} />
+      <MenuItemLink
+        item={item}
+        level={level + 1}
+        className={linkClassName}
+        style={style}
+      />
     </li>
   );
 };
@@ -172,7 +184,9 @@ const MenuItemLink = ({ item, className }: SubMenus) => {
           <IconifyIcon icon="tabler:circle-filled" />
         </span>
       )}
-      <span className="menu-text">{item.label}</span>
+      <span className="menu-text" style={{ fontSize: "12px" }}>
+        {item.label}
+      </span>
       {item.badge && (
         <span
           className={`badge rounded-pill text-end bg-${item.badge.variant}`}
